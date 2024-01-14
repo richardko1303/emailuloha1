@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularik</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<form action="http://localhost/api/v1/student/create" method="post">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <div class="input-group">
+        <div class="input-wrapper">
+            <label for="firstname">First Name:</label>
+            <input type="text" id="firstname" name="firstname" required>
+        </div>
+
+        <div class="input-wrapper">
+            <label for="lastname">Last Name:</label>
+            <input type="text" id="lastname" name="lastname" required>
+        </div>
+    </div>
+
+    <div class="input-group">
+        <div class="input-wrapper">
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+        </div>
+
+        <div class="input-wrapper">
+            <label for="grade">Grade:</label>
+            <input type="text" id="grade" name="grade" required>
+        </div>
+    </div>
+
+    <button type="submit">Save</button>
+</form>
+
+</body>
+</html>
